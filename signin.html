@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <link rel="icon" href="image/logo.svg" type="image/x-icon">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="css/signin.css">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c2385374ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="sign-in col-lg-5 m-auto">
+            <h2>Sign In</h2>
+            <P>If you don’t have an account register
+                <br>
+                You can <span> <a href="signup.html" class="signIn"> Register here ! </a></span> </P>
+        </div>
+        <form class="col-lg-5 m-auto mt-5">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Your Email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter Your Password">
+                <div class="eye float-end">
+                    <i class="fa-solid fa-eye" id="eye" onclick="change()"></i>
+                </div>
+            </div>
+
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="label form-check-label me-5" for="exampleCheck1">Remember Me</label>
+                <label class="label float-end end-100"><span style="color: #1f7cff;">Forgot Password ?</span></label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-5 rounded-pill"> <a href="maincontent.html"
+                    style="color: white; text-decoration: none;">
+                    Submit</a></button>
+            <label class="text-center col-12 mt-4">Or Continue With</label>
+            <div class="media-sosial text-center col-12 mt-4 pointer ">
+
+                <!-- Facebook -->
+                <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="mx-4">
+                    <ellipse cx="23.4474" cy="21.1588" rx="19.8629" ry="19.6896" fill="url(#paint0_linear_19_1110)" />
+                    <path
+                        d="M30.8449 28.9806L31.7272 23.4233H26.2076V19.8185C26.2076 18.2978 26.9772 16.8146 29.4494 16.8146H31.9604V12.0833C31.9604 12.0833 29.6826 11.7079 27.5058 11.7079C22.958 11.7079 19.9883 14.3701 19.9883 19.1877V23.4233H14.9351V28.9806H19.9883V42.4158C21.0028 42.5698 22.0407 42.6486 23.0979 42.6486C24.1552 42.6486 25.1931 42.5698 26.2076 42.4158V28.9806H30.8449Z"
+                        fill="white" />
+                    <defs>
+                        <linearGradient id="paint0_linear_19_1110" x1="23.4474" y1="1.46927" x2="23.4474" y2="40.7316"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#18ACFE" />
+                            <stop offset="1" stop-color="#0163E0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <!-- Google -->
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="mx-4">
+                    <path
+                        d="M42.6075 23.5961C42.6075 21.9772 42.4722 20.7958 42.1796 19.5707H23.1499V26.8776H34.3199C34.0948 28.6935 32.8787 31.4282 30.1762 33.2657L30.1383 33.5104L36.1551 38.0385L36.572 38.0789C40.4004 34.6441 42.6075 29.5904 42.6075 23.5961Z"
+                        fill="#4285F4" />
+                    <path
+                        d="M23.1488 42.8484C28.6212 42.8484 33.2152 41.0981 36.5709 38.0791L30.1751 33.2659C28.4636 34.4254 26.1665 35.2349 23.1488 35.2349C17.789 35.2349 13.24 31.8002 11.6184 27.0528L11.3807 27.0724L5.1243 31.7761L5.04248 31.997C8.37544 38.429 15.2216 42.8484 23.1488 42.8484Z"
+                        fill="#34A853" />
+                    <path
+                        d="M11.6191 27.0529C11.1913 25.8278 10.9436 24.5151 10.9436 23.1587C10.9436 21.8023 11.1913 20.4897 11.5966 19.2646L11.5853 19.0036L5.25051 14.2245L5.04325 14.3202C3.66957 16.9893 2.88135 19.9865 2.88135 23.1587C2.88135 26.3309 3.66957 29.328 5.04325 31.9971L11.6191 27.0529Z"
+                        fill="#FBBC05" />
+                    <path
+                        d="M23.1489 11.0825C26.9548 11.0825 29.5221 12.6795 30.986 14.0141L36.7061 8.58852C33.193 5.41633 28.6213 3.46924 23.1489 3.46924C15.2217 3.46924 8.37546 7.88842 5.04248 14.3203L11.5959 19.2646C13.24 14.5173 17.7891 11.0825 23.1489 11.0825Z"
+                        fill="#EB4335" />
+                </svg>
+
+                <!--  -->
+
+            </div>
+        </form>
+    </div>
+
+
+    <!-- script bootstrap -->
+    <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script pribadi -->
+    <script src="Js/signin.js"></script>
+</body>
+
+</html>

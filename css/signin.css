@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Poppins:wght@500&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .signIn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container .btn {
+  color: white;
+  transition: all 0.5s;
+}
+
+.container .label {
+  font-size: 15px;
+}
+
+.continue {
+  text-align: center;
+}
+
+.media-sosial {
+  cursor: pointer;
+}
+
+form .eye {
+  position: relative;
+  bottom: 30px;
+  right: 10px;
+}
+
+.eye i {
+  color: #1f7cff;
+  opacity: 0.6;
+}
